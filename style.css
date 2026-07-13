@@ -1,125 +1,117 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800&display=swap');
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Heebo',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-background:linear-gradient(135deg,#f4f4f4,#dcdcdc);
-display:flex;
-justify-content:center;
-align-items:center;
-min-height:100vh;
-padding:30px;
+    font-family:'Heebo',sans-serif;
+    background:linear-gradient(135deg,#0f0f10,#202124);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
 }
 
 .card{
-width:100%;
-max-width:430px;
-background:rgba(255,255,255,.75);
-backdrop-filter:blur(20px);
-border-radius:35px;
-padding:40px 30px;
-box-shadow:0 20px 60px rgba(0,0,0,.15);
-border:1px solid rgba(255,255,255,.4);
-text-align:center;
+    width:100%;
+    max-width:430px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(22px);
+    -webkit-backdrop-filter:blur(22px);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:32px;
+    padding:35px 28px;
+    text-align:center;
+    box-shadow:0 25px 70px rgba(0,0,0,.45);
 }
 
-.logo-box{
-width:170px;
-height:170px;
-background:#fff;
-margin:auto;
-border-radius:50%;
-display:flex;
-justify-content:center;
-align-items:center;
-box-shadow:0 10px 35px rgba(0,0,0,.12);
-margin-bottom:30px;
+.logoBox{
+    width:160px;
+    height:160px;
+    margin:auto;
+    background:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+    margin-bottom:25px;
 }
 
 .logo{
-width:120px;
+    width:120px;
 }
 
 h1{
-font-size:40px;
-font-weight:800;
-color:#222;
+    color:white;
+    font-size:40px;
+    font-weight:800;
 }
 
-h2{
-margin-top:8px;
-font-size:18px;
-font-weight:400;
-color:#9b7d2f;
+h3{
+    color:#d4af37;
+    margin-top:8px;
+    font-weight:500;
 }
 
 .company{
-margin-top:10px;
-margin-bottom:30px;
-font-size:20px;
-font-weight:700;
-color:#444;
+    color:#ddd;
+    margin:14px 0 30px;
+    font-size:18px;
 }
 
-.btn{
-display:flex;
-align-items:center;
-justify-content:center;
-gap:12px;
-text-decoration:none;
-padding:18px;
-margin-bottom:15px;
-border-radius:18px;
-font-size:18px;
-font-weight:700;
-color:#fff;
-background:#111;
-transition:.3s;
-box-shadow:0 10px 20px rgba(0,0,0,.18);
+.buttons{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
 }
 
-.btn:hover{
-transform:translateY(-3px);
-background:#b99128;
+.btn,
+.save{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    text-decoration:none;
+    color:white;
+    padding:16px;
+    border-radius:18px;
+    font-size:18px;
+    font-weight:700;
+    background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.15);
+    transition:.25s;
+}
+
+.btn:hover,
+.save:hover{
+    transform:translateY(-3px);
+    background:#d4af37;
+    color:#111;
 }
 
 .whatsapp{
-background:#25D366;
+    background:#25D366;
+    border:none;
 }
 
 .whatsapp:hover{
-background:#20bc5a;
+    background:#1db954;
+    color:white;
 }
 
 .save{
-display:flex;
-justify-content:center;
-align-items:center;
-gap:10px;
-margin-top:20px;
-padding:18px;
-background:#c89a2a;
-color:#fff;
-text-decoration:none;
-border-radius:18px;
-font-size:19px;
-font-weight:700;
-transition:.3s;
-}
-
-.save:hover{
-background:#b48720;
-transform:translateY(-3px);
+    margin-top:8px;
+    background:#d4af37;
+    color:#111;
 }
 
 .address{
-margin-top:25px;
-font-size:16px;
-color:#666;
-line-height:1.6;
+    margin-top:28px;
+    color:#ddd;
+    font-size:15px;
 }
